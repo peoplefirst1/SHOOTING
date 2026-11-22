@@ -139,7 +139,7 @@
       </div>
     </div>
     <div class="cover-imgs">
-      <img src="2391.jpg" width="636" height="814" alt="Seated in a chair, white shirt">
+      <img src="2391.jpg" width="629" height="804" alt="Seated in a chair, white shirt">
       <img src="2387.jpg" width="733" height="1100" alt="Standing in a window corner">
     </div>
   </div>
@@ -211,7 +211,7 @@
       <figure><img src="2263.jpg" width="778" height="1100" alt=""></figure>
       <figure><img src="2266.jpg" width="895" height="1100" alt=""></figure>
       <figure><img src="2261.jpg" width="937" height="1100" alt=""></figure>
-      <figure><img src="2264.jpg" width="802" height="1070" alt=""></figure>
+      <figure><img src="2264.jpg" width="795" height="1064" alt=""></figure>
       <figure><img src="2262.jpg" width="803" height="1100" alt=""></figure>
       <figure><img src="2392.jpg" width="733" height="1100" alt=""></figure>
       <figure><img src="2385.jpg" width="843" height="1100" alt=""></figure>
@@ -229,7 +229,7 @@
     </div>
     <div class="board">
       <figure><img src="2258.jpg" width="880" height="1100" alt=""></figure>
-      <figure><img src="2391.jpg" width="636" height="814" alt=""></figure>
+      <figure><img src="2391.jpg" width="629" height="804" alt=""></figure>
       <figure><img src="2384.jpg" width="700" height="990" alt=""></figure>
       <figure><img src="2260.jpg" width="795" height="1100" alt=""></figure>
       <figure><img src="2265.jpg" width="1100" height="849" alt=""></figure>
@@ -245,10 +245,11 @@
         <li><span class="en">The most alive frames happen when you are busy with something of your own.</span><span class="ru">Самые живые кадры — когда занят чем-то своим.</span></li>
       </ul>
     </div>
-    <div class="board">
+    <div class="board" data-per="2">
       <figure><img src="2257.jpg" width="786" height="1100" alt=""></figure>
       <figure><img src="2267.jpg" width="733" height="1100" alt=""></figure>
       <figure><img src="2386.jpg" width="792" height="1100" alt=""></figure>
+      <figure><img src="2388.jpg" width="886" height="1100" alt=""></figure>
     </div>
   </div>
 
@@ -282,7 +283,6 @@
     </div>
     <div class="board">
       <figure><img src="2387.jpg" width="733" height="1100" alt=""></figure>
-      <figure><img src="2388.jpg" width="886" height="1100" alt=""></figure>
       <figure><img src="2389.jpg" width="825" height="1100" alt=""></figure>
       <figure><img src="2394.jpg" width="733" height="1100" alt=""></figure>
     </div>
@@ -381,19 +381,20 @@
   function per(){var w=window.innerWidth;return w<760?2:3;}
   var last=0;
   function layout(){
-    var k=per(); if(k===last) return; last=k;
+    var K=per(); if(K===last) return; last=K;
     boards.forEach(function(b,i){
-      var figs=data[i], n=figs.length, rows=Math.max(1,Math.floor(n/k));
+      var k=+b.getAttribute('data-per')||K;
+      var figs=data[i], n=figs.length, rows=Math.max(1,Math.round(n/k));
       b.innerHTML=''; var idx=0;
       for(var r=0;r<rows;r++){
         var cnt=Math.floor(n/rows)+(r<n%rows?1:0);
         var row=document.createElement('div'); row.className='row';
-        for(var j=0;j<cnt;j++){var f=figs[idx++]; f.style.flex=ratio(f.querySelector('img'))+' 1 0'; row.appendChild(f);}
+        for(var j=0;j<cnt;j++){var f=figs[idx++]; f.style.flex=(ratio(f.querySelector('img'))*100)+' 1 0'; row.appendChild(f);}
         b.appendChild(row);
       }
     });
   }
-  [].slice.call(document.querySelectorAll('.cover-imgs img')).forEach(function(img){img.style.flex=ratio(img)+' 1 0';});
+  [].slice.call(document.querySelectorAll('.cover-imgs img')).forEach(function(img){img.style.flex=(ratio(img)*100)+' 1 0';});
   layout(); window.addEventListener('resize',layout);
 })();
 </script>
