@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>People First — November Shooting Moodboard</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{ --paper:#F6F5F2; --ink:#121212; --muted:#7C7A76; --line:#DAD8D3; --red:#C8261C; }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{-webkit-text-size-adjust:100%}
+  body{background:var(--paper);color:var(--ink);font-family:Archivo,Helvetica,Arial,sans-serif;text-transform:uppercase;letter-spacing:.04em;line-height:1.5;font-size:13px}
+  img{display:block;width:100%;height:auto}
+  .wrap{max-width:1180px;margin:0 auto;padding-left:20px;padding-right:20px}
+  .label{font-size:11px;font-weight:600;letter-spacing:.2em;color:var(--red)}
+  .small{font-size:11px;font-weight:500;letter-spacing:.16em;color:var(--muted)}
+  .ru{color:var(--muted);font-weight:400}
+
+  /* cover */
+  .cover{padding-top:26px;padding-bottom:44px}
+  .topbar{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--ink);padding-bottom:12px;margin-bottom:28px}
+  .brand{font-size:13px;font-weight:800;letter-spacing:.02em}
+  .cover-grid{display:grid;gap:26px}
+  h1{font-weight:800;font-size:clamp(46px,12vw,108px);line-height:.88;letter-spacing:-.035em}
+  h1 span{color:var(--red)}
+  .intro{margin-top:24px;max-width:560px;display:grid;gap:8px}
+  .intro .en{font-size:14px;font-weight:600;line-height:1.5}
+  .intro .ru{font-size:12px;line-height:1.55}
+  .meta{display:grid;grid-template-columns:1fr 1fr;gap:18px 24px;margin-top:26px;border-top:1px solid var(--line);padding-top:16px}
+  .meta b{display:block;font-size:13px;font-weight:700;letter-spacing:.06em;margin-top:4px}
+  .cover-imgs{display:grid;grid-template-columns:1fr 1fr;gap:8px;align-items:start}
+  .note{margin-top:18px;padding:12px 14px;border:1px solid var(--ink);display:grid;gap:4px}
+  .note .en{font-size:12px;font-weight:700;letter-spacing:.06em}
+  .note .ru{font-size:11px}
+
+  /* sections */
+  section.wrap{padding-top:52px;padding-bottom:8px;border-top:1px solid var(--ink)}
+  .sec-head{display:grid;gap:14px;margin-bottom:26px}
+  h2{font-weight:800;font-size:clamp(36px,8vw,68px);line-height:.92;letter-spacing:-.03em;margin-top:8px}
+  .lead{display:grid;gap:6px;max-width:640px}
+  .lead .en{font-size:14px;font-weight:700;line-height:1.5}
+  .lead .ru{font-size:12px;line-height:1.55}
+
+  .keys{border-top:1px solid var(--line);margin:6px 0 10px}
+  .keys > div{padding:14px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:110px 1fr;gap:14px}
+  .keys .k{font-size:11px;font-weight:800;letter-spacing:.16em;padding-top:1px}
+  .keys .v{display:grid;gap:4px}
+  .keys .v .en{font-size:12.5px;font-weight:500;line-height:1.5}
+  .keys .v .ru{font-size:11.5px;line-height:1.5}
+
+  .palette{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin:24px 0 8px}
+  .sw{aspect-ratio:3/4}
+  .sw-l{font-size:10px;font-weight:600;letter-spacing:.14em;margin-top:6px}
+
+  /* poses */
+  .pose{padding:30px 0 28px;border-top:1px solid var(--line)}
+  .pose:first-of-type{border-top:none;padding-top:6px}
+  .pose-head{display:grid;gap:10px;margin-bottom:18px}
+  .pose-head h3{font-size:20px;font-weight:800;letter-spacing:-.01em}
+  .pose-head .num{font-size:11px;letter-spacing:.2em;color:var(--red);font-weight:700;margin-bottom:4px}
+  .pose-head ul{list-style:none;max-width:660px}
+  .pose-head li{padding-left:16px;position:relative;margin-top:8px;display:grid;gap:2px}
+  .pose-head li:before{content:"—";position:absolute;left:0;color:var(--red);font-weight:700}
+  .pose-head li .en{font-size:12.5px;font-weight:500;line-height:1.45}
+  .pose-head li .ru{font-size:11.5px;line-height:1.45}
+  .board{columns:2;column-gap:8px}
+  .board figure{break-inside:avoid;margin-bottom:8px}
+
+  /* cast */
+  .cast{display:grid;grid-template-columns:1fr}
+  .cast article{padding:20px 0;border-top:1px solid var(--line);display:grid;gap:8px;align-content:start}
+  .cast h4{font-size:16px;font-weight:800;letter-spacing:.02em}
+  .cast .en{font-size:12.5px;font-weight:500;line-height:1.5}
+  .cast .ru{font-size:11.5px;line-height:1.5}
+  .cast .refs{font-size:10.5px;font-weight:700;letter-spacing:.16em;color:var(--red);margin-top:4px}
+  .together{margin-top:10px;padding-top:18px;border-top:1px solid var(--line);display:grid;gap:6px;max-width:660px}
+  .together .en{font-size:12.5px;font-weight:600}
+  .together .ru{font-size:11.5px}
+
+  .rules{display:grid;grid-template-columns:1fr;gap:26px}
+  .rules h4{font-size:13px;font-weight:800;letter-spacing:.18em;margin-bottom:6px;padding-bottom:8px;border-bottom:1px solid var(--ink)}
+  .rules h4 span{color:var(--muted);font-weight:500}
+  .rules ul{list-style:none}
+  .rules li{padding:9px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
+  .rules li .en{font-size:12.5px;font-weight:600}
+  .rules li .ru{font-size:11.5px}
+
+  footer.wrap{border-top:1px solid var(--ink);margin-top:56px;padding-top:20px;padding-bottom:40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+  @media (min-width:760px){
+    body{font-size:14px}
+    .wrap{padding-left:40px;padding-right:40px}
+    .cover{padding-top:40px;padding-bottom:64px}
+    .cover-grid{grid-template-columns:1.1fr 1fr;gap:48px;align-items:end}
+    .meta{grid-template-columns:1fr 2fr}
+    .sec-head{grid-template-columns:1fr 1.3fr;gap:40px;align-items:end}
+    .keys > div{grid-template-columns:200px 1fr}
+    .pose-head{grid-template-columns:260px 1fr;gap:40px}
+    .board{columns:3;column-gap:12px}
+    .board figure{margin-bottom:12px}
+    .cast{grid-template-columns:repeat(3,1fr);gap:0 32px}
+    .rules{grid-template-columns:1fr 1fr;gap:48px}
+  }
+  @media (min-width:1100px){ .board{columns:4} }
+</style>
+</head>
+<body>
+
+<!-- COVER -->
+<header class="wrap cover">
+  <div class="topbar">
+    <span class="brand">PEOPLE FIRST</span>
+    <span class="small">Moodboard</span>
+  </div>
+  <div class="cover-grid">
+    <div>
+      <div class="label">Shirts &amp; Sweatshirts</div>
+      <h1 style="margin-top:14px">November<br><span>Shooting</span></h1>
+      <div class="intro">
+        <p class="en">Soft daylight, quiet rooms, real people. Nobody poses — they simply live in their clothes.</p>
+        <p class="ru">Мягкий дневной свет, тихие комнаты, настоящие люди. Никто не позирует — люди просто живут в своей одежде.</p>
+      </div>
+      <div class="meta">
+        <div><span class="small">Date / Дата</span><b>Wednesday, 25.11</b></div>
+        <div><span class="small">Cast / Модели</span><b>Sonya, Ivan,<br>Diana &amp; son</b></div>
+      </div>
+      <div class="note">
+        <p class="en">The references below are for poses and mood. We shoot our own shirts and sweatshirts.</p>
+        <p class="ru">Референсы ниже — для поз и настроения. Снимаем наши рубашки и свитшоты.</p>
+      </div>
+    </div>
+    <div class="cover-imgs">
+      <img src="2391.jpg" alt="Seated in a chair, white shirt">
+      <img src="2387.jpg" alt="Standing in a window corner">
+    </div>
+  </div>
+</header>
+
+<!-- 01 MOOD -->
+<section class="wrap">
+  <div class="sec-head">
+    <div>
+      <div class="label">01</div>
+      <h2>The Mood</h2>
+    </div>
+    <div class="lead">
+      <p class="en">Quiet confidence. No rush, no “posing for the camera”. As if the photographer walked into a room where we had already spent the whole day.</p>
+      <p class="ru">Тихая уверенность. Никакой спешки, никакой «позы для фото». Как будто фотограф зашёл в комнату, где мы уже провели целый день.</p>
+    </div>
+  </div>
+  <div class="keys">
+    <div><span class="k">Feeling</span><div class="v">
+      <p class="en">Calm, slightly detached, at home yet put together. Look away or straight through the camera — no smiling at the lens.</p>
+      <p class="ru">Спокойно, немного отстранённо, по-домашнему, но собранно. Взгляд в сторону или сквозь камеру, без улыбки на камеру.</p></div></div>
+    <div><span class="k">Space</span><div class="v">
+      <p class="en">A lived-in interior: sofas, armchairs, rugs, shelves, books and records, large windows.</p>
+      <p class="ru">Живой интерьер: диваны, кресла, ковры, стеллажи, книги и пластинки, большие окна.</p></div></div>
+    <div><span class="k">Light</span><div class="v">
+      <p class="en">Soft daylight from the window, a lamp in the frame where it helps. No direct flash; shadows stay alive.</p>
+      <p class="ru">Мягкий дневной свет из окна, лампа в кадре, где это помогает. Без вспышки в лоб, тени живые.</p></div></div>
+    <div><span class="k">Image</span><div class="v">
+      <p class="en">A film feel: light grain, true colour, nothing glossy.</p>
+      <p class="ru">Плёночное ощущение: лёгкое зерно, честный цвет, ничего «глянцевого».</p></div></div>
+    <div><span class="k">Clothes</span><div class="v">
+      <p class="en">Our shirts and sweatshirts are the hero. They sit loose and look worn-in, never stiff.</p>
+      <p class="ru">Главные герои — наши рубашки и свитшоты. Сидят свободно и выглядят прожитыми, не «новыми с вешалки».</p></div></div>
+  </div>
+
+  <div class="palette" aria-label="Palette">
+    <div><div class="sw" style="background:#1F2A3B"></div><div class="sw-l">Navy</div></div>
+    <div><div class="sw" style="background:#FFFFFF;outline:1px solid var(--line);outline-offset:-1px"></div><div class="sw-l">White</div></div>
+    <div><div class="sw" style="background:#9A9A98"></div><div class="sw-l">Grey</div></div>
+    <div><div class="sw" style="background:#6E2124"></div><div class="sw-l">Burgundy</div></div>
+    <div><div class="sw" style="background:#BDB6AA"></div><div class="sw-l">Stone</div></div>
+  </div>
+</section>
+
+<!-- 02 POSES -->
+<section class="wrap">
+  <div class="sec-head">
+    <div>
+      <div class="label">02</div>
+      <h2>Poses</h2>
+    </div>
+    <div class="lead">
+      <p class="en">Six kinds of frames. Each comes with references and a few notes on how to get into it.</p>
+      <p class="ru">Шесть типов кадров. Внутри каждого — референсы и пара подсказок, как в них встать.</p>
+    </div>
+  </div>
+
+  <div class="pose">
+    <div class="pose-head">
+      <div><div class="num">I</div><h3>Lounging</h3></div>
+      <ul>
+        <li><span class="en">Lie or half-lie on a sofa or armchair, as if tired after a long day.</span><span class="ru">Лечь или полулечь на диван или кресло, как будто устал(а) после долгого дня.</span></li>
+        <li><span class="en">Hands behind the head, near the face, or loose on the backrest. Legs in one long line.</span><span class="ru">Руки за головой, у лица или свободно на спинке. Ноги длинной линией.</span></li>
+        <li><span class="en">Hold a book, a magazine, a record — an object, not a pose.</span><span class="ru">Можно взять книгу, журнал, пластинку — предмет, а не позу.</span></li>
+      </ul>
+    </div>
+    <div class="board">
+      <figure><img src="2256.jpg" alt=""></figure>
+      <figure><img src="2263.jpg" alt=""></figure>
+      <figure><img src="2266.jpg" alt=""></figure>
+      <figure><img src="2261.jpg" alt=""></figure>
+      <figure><img src="2264.jpg" alt=""></figure>
+      <figure><img src="2262.jpg" alt=""></figure>
+      <figure><img src="2392.jpg" alt=""></figure>
+      <figure><img src="2385.jpg" alt=""></figure>
+    </div>
+  </div>
+
+  <div class="pose">
+    <div class="pose-head">
+      <div><div class="num">II</div><h3>Seated</h3></div>
+      <ul>
+        <li><span class="en">Sit loosely: on a console, a windowsill, a chair, at a desk.</span><span class="ru">Сидеть свободно: на консоли, подоконнике, стуле, за столом.</span></li>
+        <li><span class="en">Knees apart or legs crossed, shoulders relaxed, body slightly turned.</span><span class="ru">Колени врозь или нога на ногу, плечи расслаблены, корпус чуть развёрнут.</span></li>
+        <li><span class="en">Look past the camera, or straight into it — calmly.</span><span class="ru">Взгляд мимо камеры или прямо, но спокойно.</span></li>
+      </ul>
+    </div>
+    <div class="board">
+      <figure><img src="2258.jpg" alt=""></figure>
+      <figure><img src="2391.jpg" alt=""></figure>
+      <figure><img src="2384.jpg" alt=""></figure>
+      <figure><img src="2260.jpg" alt=""></figure>
+      <figure><img src="2265.jpg" alt=""></figure>
+    </div>
+  </div>
+
+  <div class="pose">
+    <div class="pose-head">
+      <div><div class="num">III</div><h3>On the Floor</h3></div>
+      <ul>
+        <li><span class="en">Sit or lie right on the rug — among records and books, by the window.</span><span class="ru">Сесть или лечь прямо на ковёр среди пластинок, книг, у окна.</span></li>
+        <li><span class="en">Lean on an elbow or on the furniture behind you.</span><span class="ru">Опереться на локоть или на мебель за спиной.</span></li>
+        <li><span class="en">The most alive frames happen when you are busy with something of your own.</span><span class="ru">Самые живые кадры — когда занят чем-то своим.</span></li>
+      </ul>
+    </div>
+    <div class="board">
+      <figure><img src="2257.jpg" alt=""></figure>
+      <figure><img src="2267.jpg" alt=""></figure>
+      <figure><img src="2386.jpg" alt=""></figure>
+    </div>
+  </div>
+
+  <div class="pose">
+    <div class="pose-head">
+      <div><div class="num">IV</div><h3>Against the Wall</h3></div>
+      <ul>
+        <li><span class="en">Stand against a wall, leaning with your back or one shoulder.</span><span class="ru">Стоять у стены, прислонившись спиной или плечом.</span></li>
+        <li><span class="en">Hands in pockets, weight on one leg. Full length, so the cut reads.</span><span class="ru">Руки в карманах, вес на одну ногу. Полный рост, чтобы читался крой.</span></li>
+        <li><span class="en">Keep it simple: one person, one wall, one light.</span><span class="ru">Максимум простоты: один человек, одна стена, один свет.</span></li>
+      </ul>
+    </div>
+    <div class="board">
+      <figure><img src="2270.jpg" alt=""></figure>
+      <figure><img src="2269.jpg" alt=""></figure>
+      <figure><img src="2272.jpg" alt=""></figure>
+      <figure><img src="2393.jpg" alt=""></figure>
+      <figure><img src="2268.jpg" alt=""></figure>
+      <figure><img src="2259.jpg" alt=""></figure>
+    </div>
+  </div>
+
+  <div class="pose">
+    <div class="pose-head">
+      <div><div class="num">V</div><h3>By the Window</h3></div>
+      <ul>
+        <li><span class="en">Use the daylight: stand in the window corner, crouch by the glass, sit on a sofa with your back to the light.</span><span class="ru">Использовать дневной свет: стоять в углу у окна, присесть у стекла, сесть на диван спиной к свету.</span></li>
+        <li><span class="en">Profile and a look out of the window work especially well.</span><span class="ru">Профиль и взгляд в окно работают особенно хорошо.</span></li>
+        <li><span class="en">Lots of air around — the person is small in the frame.</span><span class="ru">Вокруг много воздуха, человек в кадре небольшой.</span></li>
+      </ul>
+    </div>
+    <div class="board">
+      <figure><img src="2387.jpg" alt=""></figure>
+      <figure><img src="2388.jpg" alt=""></figure>
+      <figure><img src="2389.jpg" alt=""></figure>
+      <figure><img src="2394.jpg" alt=""></figure>
+    </div>
+  </div>
+
+  <div class="pose">
+    <div class="pose-head">
+      <div><div class="num">VI</div><h3>Close</h3></div>
+      <ul>
+        <li><span class="en">Waist-up portrait or closer. Fabric, collar, hands, hair.</span><span class="ru">Портрет по пояс или крупнее. Ткань, воротник, руки, волосы.</span></li>
+        <li><span class="en">A calm face; look away, or straight into the camera without a smile.</span><span class="ru">Лицо спокойное, взгляд в сторону или прямо в камеру без улыбки.</span></li>
+      </ul>
+    </div>
+    <div class="board">
+      <figure><img src="2255.jpg" alt=""></figure>
+      <figure><img src="2271.jpg" alt=""></figure>
+      <figure><img src="2390.jpg" alt=""></figure>
+    </div>
+  </div>
+</section>
+
+<!-- 03 CAST -->
+<section class="wrap">
+  <div class="sec-head">
+    <div>
+      <div class="label">03</div>
+      <h2>The Cast</h2>
+    </div>
+    <div class="lead">
+      <p class="en">We don’t play models. A brother, a sister, a mother and her son — people who know each other.</p>
+      <p class="ru">Мы не играем моделей. Брат, сестра, мама с сыном — люди, которые знают друг друга.</p>
+    </div>
+  </div>
+  <div class="cast">
+    <article>
+      <h4>Sonya</h4>
+      <p class="en">Lounging, seated on a console or windowsill, by the window. Long lines, relaxed hands.</p>
+      <p class="ru">Lounging, сидя на консоли или подоконнике, у окна. Длинные линии, расслабленные руки.</p>
+      <div class="refs">See: I · II · V</div>
+    </article>
+    <article>
+      <h4>Ivan</h4>
+      <p class="en">Full length against the wall, hands in pockets. Half-lying in an armchair, like the frame with the lamp.</p>
+      <p class="ru">Полный рост у стены, руки в карманах. Полулёжа в кресле, как в кадре с лампой.</p>
+      <div class="refs">See: IV · I (last frame)</div>
+    </article>
+    <article>
+      <h4>Diana &amp; Son</h4>
+      <p class="en">Together on the sofa or the rug: she half-lies, he is next to her with a book or records. The child is busy with his own thing, not posing. Separately — Diana by the window or against the wall.</p>
+      <p class="ru">Вместе на диване или на ковре: она полулёжа, он рядом с книгой или пластинками. Ребёнок занят своим делом, а не позирует. Отдельно — Диана у окна или у стены.</p>
+      <div class="refs">See: I · III · V</div>
+    </article>
+  </div>
+  <div class="together">
+    <p class="en">Group frames: everyone in one room, each in their own rhythm. One lies on the sofa, one stands by the shelf, one sits on the floor. Never line up in a row.</p>
+    <p class="ru">Общие кадры: все вместе в одной комнате, но каждый в своём ритме. Один лежит на диване, другой стоит у стеллажа, третий сидит на полу. Не выстраиваться в линию.</p>
+  </div>
+</section>
+
+<!-- 04 ON SET -->
+<section class="wrap">
+  <div class="sec-head">
+    <div>
+      <div class="label">04</div>
+      <h2>On Set</h2>
+    </div>
+    <div class="lead">
+      <p class="en">A short note for everyone on set.</p>
+      <p class="ru">Короткая памятка для всех на площадке.</p>
+    </div>
+  </div>
+  <div class="rules">
+    <div>
+      <h4>Yes <span>/ Да</span></h4>
+      <ul>
+        <li><span class="en">Slow movements, pauses between frames</span><span class="ru">Медленные движения, паузы между кадрами</span></li>
+        <li><span class="en">Objects in hand: a book, a record, a cup, glasses</span><span class="ru">Предметы в руках: книга, пластинка, чашка, очки</span></li>
+        <li><span class="en">Soft daylight, lamps on in the frame</span><span class="ru">Мягкий дневной свет, лампы включены прямо в кадре</span></li>
+        <li><span class="en">Full length, so the cut is visible</span><span class="ru">Полный рост, чтобы был виден крой</span></li>
+        <li><span class="en">Looking away, profile, a slight distance</span><span class="ru">Взгляд в сторону, профиль, лёгкая отстранённость</span></li>
+      </ul>
+    </div>
+    <div>
+      <h4>No <span>/ Нет</span></h4>
+      <ul>
+        <li><span class="en">Big smiles at the camera</span><span class="ru">Широкие улыбки на камеру</span></li>
+        <li><span class="en">Hands on hips, catalogue poses</span><span class="ru">Руки на талии, «каталожные» позы</span></li>
+        <li><span class="en">Cold light and direct flash</span><span class="ru">Холодный свет и вспышка в лоб</span></li>
+        <li><span class="en">Everyone in one row in front of the camera</span><span class="ru">Все в один ряд перед камерой</span></li>
+        <li><span class="en">A perfectly pressed, sterile look</span><span class="ru">Идеально отглаженный, стерильный вид</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<footer class="wrap">
+  <span class="brand">PEOPLE FIRST</span>
+  <span class="small">peoplefirst.eu.com · November 2026</span>
+</footer>
+
+</body>
+</html>
