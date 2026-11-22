@@ -82,7 +82,7 @@
   .rules{display:grid;grid-template-columns:1fr;gap:26px}
   .rules h4{font-size:13px;font-weight:800;letter-spacing:.18em;margin-bottom:6px;padding-bottom:8px;border-bottom:1px solid var(--ink)}
   .rules h4 span{color:var(--muted);font-weight:500}
-  .rules ul{list-style:none}
+  .rules ul{list-style:none;border-top:1px solid var(--ink)}
   .rules li{padding:9px 0;border-bottom:1px solid var(--line);display:grid;gap:2px}
   .rules li .en{font-size:12.5px;font-weight:600}
   .rules li .ru{font-size:11.5px}
@@ -101,7 +101,7 @@
     .board{columns:3;column-gap:12px}
     .board figure{margin-bottom:12px}
     .cast{grid-template-columns:repeat(3,1fr);gap:0 32px}
-    .rules{grid-template-columns:1fr 1fr;gap:48px}
+    .rules{grid-template-columns:1fr;gap:48px;max-width:760px}
   }
   @media (min-width:1100px){ .board{columns:4} }
 
@@ -350,29 +350,18 @@
       <h2>On Set</h2>
     </div>
     <div class="lead">
-      <p class="en">A short note for everyone on set.</p>
-      <p class="ru">Короткая памятка для всех на площадке.</p>
+      <p class="en">A few ideas for the set. Optional — pick what works.</p>
+      <p class="ru">Несколько идей для площадки. Не обязательно — выбираем то, что подходит.</p>
     </div>
   </div>
   <div class="rules">
     <div>
-      <h4>Yes <span>/ Да</span></h4>
       <ul>
         <li><span class="en">Slow movements, pauses between frames</span><span class="ru">Медленные движения, паузы между кадрами</span></li>
         <li><span class="en">Objects in hand: a book, a record, a cup, glasses</span><span class="ru">Предметы в руках: книга, пластинка, чашка, очки</span></li>
         <li><span class="en">Soft daylight, lamps on in the frame</span><span class="ru">Мягкий дневной свет, лампы включены прямо в кадре</span></li>
         <li><span class="en">Full length, so the cut is visible</span><span class="ru">Полный рост, чтобы был виден крой</span></li>
         <li><span class="en">Looking away, profile, a slight distance</span><span class="ru">Взгляд в сторону, профиль, лёгкая отстранённость</span></li>
-      </ul>
-    </div>
-    <div>
-      <h4>No <span>/ Нет</span></h4>
-      <ul>
-        <li><span class="en">Big smiles at the camera</span><span class="ru">Широкие улыбки на камеру</span></li>
-        <li><span class="en">Hands on hips, catalogue poses</span><span class="ru">Руки на талии, «каталожные» позы</span></li>
-        <li><span class="en">Cold light and direct flash</span><span class="ru">Холодный свет и вспышка в лоб</span></li>
-        <li><span class="en">Everyone in one row in front of the camera</span><span class="ru">Все в один ряд перед камерой</span></li>
-        <li><span class="en">A perfectly pressed, sterile look</span><span class="ru">Идеально отглаженный, стерильный вид</span></li>
       </ul>
     </div>
   </div>
