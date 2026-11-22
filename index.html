@@ -104,6 +104,13 @@
     .rules{grid-template-columns:1fr 1fr;gap:48px}
   }
   @media (min-width:1100px){ .board{columns:4} }
+
+  .board{columns:auto!important;display:grid;gap:8px}
+  .row{display:flex;gap:8px;align-items:flex-start}
+  .row figure{margin:0!important;min-width:0}
+  .cover-imgs{display:flex!important;gap:8px;align-items:flex-start}
+  .cover-imgs img{min-width:0}
+  @media (min-width:760px){ .board{gap:12px} .row{gap:12px} }
 </style>
 </head>
 <body>
@@ -132,8 +139,8 @@
       </div>
     </div>
     <div class="cover-imgs">
-      <img src="2391.jpg" alt="Seated in a chair, white shirt">
-      <img src="2387.jpg" alt="Standing in a window corner">
+      <img src="2391.jpg" width="636" height="814" alt="Seated in a chair, white shirt">
+      <img src="2387.jpg" width="733" height="1100" alt="Standing in a window corner">
     </div>
   </div>
 </header>
@@ -200,14 +207,14 @@
       </ul>
     </div>
     <div class="board">
-      <figure><img src="2256.jpg" alt=""></figure>
-      <figure><img src="2263.jpg" alt=""></figure>
-      <figure><img src="2266.jpg" alt=""></figure>
-      <figure><img src="2261.jpg" alt=""></figure>
-      <figure><img src="2264.jpg" alt=""></figure>
-      <figure><img src="2262.jpg" alt=""></figure>
-      <figure><img src="2392.jpg" alt=""></figure>
-      <figure><img src="2385.jpg" alt=""></figure>
+      <figure><img src="2256.jpg" width="891" height="1100" alt=""></figure>
+      <figure><img src="2263.jpg" width="778" height="1100" alt=""></figure>
+      <figure><img src="2266.jpg" width="895" height="1100" alt=""></figure>
+      <figure><img src="2261.jpg" width="937" height="1100" alt=""></figure>
+      <figure><img src="2264.jpg" width="802" height="1070" alt=""></figure>
+      <figure><img src="2262.jpg" width="803" height="1100" alt=""></figure>
+      <figure><img src="2392.jpg" width="733" height="1100" alt=""></figure>
+      <figure><img src="2385.jpg" width="843" height="1100" alt=""></figure>
     </div>
   </div>
 
@@ -221,11 +228,11 @@
       </ul>
     </div>
     <div class="board">
-      <figure><img src="2258.jpg" alt=""></figure>
-      <figure><img src="2391.jpg" alt=""></figure>
-      <figure><img src="2384.jpg" alt=""></figure>
-      <figure><img src="2260.jpg" alt=""></figure>
-      <figure><img src="2265.jpg" alt=""></figure>
+      <figure><img src="2258.jpg" width="880" height="1100" alt=""></figure>
+      <figure><img src="2391.jpg" width="636" height="814" alt=""></figure>
+      <figure><img src="2384.jpg" width="700" height="990" alt=""></figure>
+      <figure><img src="2260.jpg" width="795" height="1100" alt=""></figure>
+      <figure><img src="2265.jpg" width="1100" height="849" alt=""></figure>
     </div>
   </div>
 
@@ -239,9 +246,9 @@
       </ul>
     </div>
     <div class="board">
-      <figure><img src="2257.jpg" alt=""></figure>
-      <figure><img src="2267.jpg" alt=""></figure>
-      <figure><img src="2386.jpg" alt=""></figure>
+      <figure><img src="2257.jpg" width="786" height="1100" alt=""></figure>
+      <figure><img src="2267.jpg" width="733" height="1100" alt=""></figure>
+      <figure><img src="2386.jpg" width="792" height="1100" alt=""></figure>
     </div>
   </div>
 
@@ -255,12 +262,12 @@
       </ul>
     </div>
     <div class="board">
-      <figure><img src="2270.jpg" alt=""></figure>
-      <figure><img src="2269.jpg" alt=""></figure>
-      <figure><img src="2272.jpg" alt=""></figure>
-      <figure><img src="2393.jpg" alt=""></figure>
-      <figure><img src="2268.jpg" alt=""></figure>
-      <figure><img src="2259.jpg" alt=""></figure>
+      <figure><img src="2270.jpg" width="735" height="919" alt=""></figure>
+      <figure><img src="2269.jpg" width="843" height="1100" alt=""></figure>
+      <figure><img src="2272.jpg" width="880" height="1100" alt=""></figure>
+      <figure><img src="2393.jpg" width="733" height="1100" alt=""></figure>
+      <figure><img src="2268.jpg" width="1000" height="653" alt=""></figure>
+      <figure><img src="2259.jpg" width="880" height="1100" alt=""></figure>
     </div>
   </div>
 
@@ -274,10 +281,10 @@
       </ul>
     </div>
     <div class="board">
-      <figure><img src="2387.jpg" alt=""></figure>
-      <figure><img src="2388.jpg" alt=""></figure>
-      <figure><img src="2389.jpg" alt=""></figure>
-      <figure><img src="2394.jpg" alt=""></figure>
+      <figure><img src="2387.jpg" width="733" height="1100" alt=""></figure>
+      <figure><img src="2388.jpg" width="886" height="1100" alt=""></figure>
+      <figure><img src="2389.jpg" width="825" height="1100" alt=""></figure>
+      <figure><img src="2394.jpg" width="733" height="1100" alt=""></figure>
     </div>
   </div>
 
@@ -290,9 +297,9 @@
       </ul>
     </div>
     <div class="board">
-      <figure><img src="2255.jpg" alt=""></figure>
-      <figure><img src="2271.jpg" alt=""></figure>
-      <figure><img src="2390.jpg" alt=""></figure>
+      <figure><img src="2255.jpg" width="886" height="1100" alt=""></figure>
+      <figure><img src="2271.jpg" width="880" height="1100" alt=""></figure>
+      <figure><img src="2390.jpg" width="804" height="1026" alt=""></figure>
     </div>
   </div>
 </section>
@@ -376,5 +383,30 @@
   <span class="small">peoplefirst.eu.com · November 2026</span>
 </footer>
 
+
+<script>
+(function(){
+  function ratio(img){return (+img.getAttribute('width'))/(+img.getAttribute('height'));}
+  var boards=[].slice.call(document.querySelectorAll('.board'));
+  var data=boards.map(function(b){return [].slice.call(b.querySelectorAll('figure'));});
+  function per(){var w=window.innerWidth;return w<760?2:3;}
+  var last=0;
+  function layout(){
+    var k=per(); if(k===last) return; last=k;
+    boards.forEach(function(b,i){
+      var figs=data[i], n=figs.length, rows=Math.max(1,Math.floor(n/k));
+      b.innerHTML=''; var idx=0;
+      for(var r=0;r<rows;r++){
+        var cnt=Math.floor(n/rows)+(r<n%rows?1:0);
+        var row=document.createElement('div'); row.className='row';
+        for(var j=0;j<cnt;j++){var f=figs[idx++]; f.style.flex=ratio(f.querySelector('img'))+' 1 0'; row.appendChild(f);}
+        b.appendChild(row);
+      }
+    });
+  }
+  [].slice.call(document.querySelectorAll('.cover-imgs img')).forEach(function(img){img.style.flex=ratio(img)+' 1 0';});
+  layout(); window.addEventListener('resize',layout);
+})();
+</script>
 </body>
 </html>
